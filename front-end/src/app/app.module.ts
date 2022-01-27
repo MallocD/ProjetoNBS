@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { VeiculosComponent } from './veiculos/veiculos.component';
 import { ComprarComponent } from './comprar/comprar.component';
 import { FormsModule } from '@angular/forms';
+import { AudiComponents } from './veiculos_info/audi/audia8.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     VeiculosComponent,
     NavBarComponent,
-    ComprarComponent
+    ComprarComponent,
+    AudiComponents
    
    
   ],

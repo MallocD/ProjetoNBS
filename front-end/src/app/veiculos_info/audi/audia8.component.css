@@ -1,7 +1,8 @@
 body{
     background-color: rgba(252, 252, 252, 0.836);
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:serif Garamond;
+    font-size: 20px;
   }
   section{
     padding :50px;
@@ -18,11 +19,10 @@ body{
     font-size:15px;
     background-color: rgb(13, 86, 243);
     color: aliceblue;
-    text-align: center;
-  
+    
     
   }
-  p#p1{
+  p{
     text-align:justify;
   }
   a{
@@ -35,11 +35,12 @@ body{
     text-align: center;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.527);
     border-radius:10px;
-    font-family: Didot, serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: azure;
   }
   img{
-    border-radius: 300px;
+    margin: 10px;
+    border-radius: 0px 20px;
   }
   th{
     font-size: 27px;

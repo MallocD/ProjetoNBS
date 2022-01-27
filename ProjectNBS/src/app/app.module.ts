@@ -1,20 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { CoreModule } from './cores/core.module';
+import { NavBarComponent } from './cores/nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
+import { VeiculosComponent } from './veiculos/veiculos.component';
+import { ComprarComponent } from './comprar/comprar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    VeiculosComponent,
+    NavBarComponent,
+    ComprarComponent
+   
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

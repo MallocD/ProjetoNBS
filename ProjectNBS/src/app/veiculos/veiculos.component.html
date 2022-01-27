@@ -1,0 +1,43 @@
+<h1> Veículos e Tecnologias</h1>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<div class = "form-group row"> 
+
+    <div class = "col-sm-10"> 
+
+    </div>
+</div>
+
+<table class = "table table-striped">
+    <thead style="border-radius: 10px">
+        <tr>
+            <th>Image</th>
+            <th>Nome dos Veículos</th>
+            <th>Preços</th>
+            <th>Code</th>
+            <th>Tecnologias</th>
+            <th>Options</th>
+        </tr>
+        <tr *ngFor= 'let veiculos of veiculos'>
+            <td><img [src]="veiculos.imageUrl" width="30" height="30"></td>
+            <td>{{veiculos.name}}</td>
+            <td>{{veiculos.price}}</td>
+            <td>{{veiculos.tecnology}}</td>
+            <td>
+                <a routerLink= "/veiculos/comprar" class="btn btn-primary">Comprar</a>
+            </td>
+            
+        </tr>
+    </thead>
+   
+        
+        
+            
+        
+    
+</table>

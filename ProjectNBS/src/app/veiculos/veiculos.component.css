@@ -29,7 +29,7 @@ body{
     font-family: DejaVu Sans Mono, monospace;
   }
   h1{
-    background-color:rgb(13, 86, 243);
+    background-color:rgb(0, 0, 0);
     text-align: center;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.527);
     border-radius:10px;

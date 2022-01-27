@@ -11,7 +11,8 @@ import { VeiculosComponent } from "./veiculos/veiculos.component";
     declarations:[
         HomeComponent,
         VeiculosComponent,
-        ComprarComponent
+        ComprarComponent,
+        NavBarComponent
 
 
     ],
@@ -19,6 +20,9 @@ import { VeiculosComponent } from "./veiculos/veiculos.component";
     CommonModule,
     FormsModule,
     AppRoutingModule
+],
+exports: [
+    NavBarComponent
 ]
 })
 export class ClientModule{

@@ -8,11 +8,12 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './client/home/home.component';
 import { NavBarComponent } from './client/cores/nav-bar/nav-bar.component';
 import { ClientModule } from './client/client.module';
+import { ClientComponent } from './client/client.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
+    ClientComponent
   ],
   imports: [
     BrowserModule,

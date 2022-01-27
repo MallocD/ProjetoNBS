@@ -35,7 +35,7 @@ export class VeiculosService{
 
 
 }
-var VEICULOS: Veiculos[] = [
+/* var VEICULOS: Veiculos[] = [
     {
         id: 1,
         name: 'Angular: CLI',
@@ -76,4 +76,4 @@ var VEICULOS: Veiculos[] = [
         price: 12.99,
         imageUrl: '/assets/images/cli.png',
     }
-];
+]; */

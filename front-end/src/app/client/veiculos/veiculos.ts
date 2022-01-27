@@ -1,7 +1,8 @@
 export class Veiculos{
-    id: number;
+    code: number;
     name: string;
     imageUrl: string;
     price: string;
     date: string;
+    color: string;
 }

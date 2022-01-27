@@ -1,4 +1,3 @@
-
 <h2> Carrinho</h2>
 
 <hr/>
@@ -53,7 +52,35 @@
         <input type="text" class="form-control" id="inputCity" placeholder="Ex: Mato-Grosso">
       </div>
     </div>
-    <p></p>
+    <hr>
+    <p><br></p>
+    <div class = "form-group row"> 
+      <label style="text-align: center;" class= "col-sm-10 col-fr-label">Nome do Veículo </label>
+        <div class = "col-sm-10"> 
+          <input [(ngModel)]="veiculos.name" required name = 'name' #veiculoName= 'ngModel' [ngClass]="{'is-invalid': veiculoName.invalid}" class= "form-control">
+            <div class="invalid-feedback">
+            <span>Course name is required!</span>
+          </div>
+        </div>
+      </div>
+
+    <div class = "form-group row"> 
+      <label style="text-align: center;"class= "col-sm-10 col-fr-label">Cor do veículo </label>
+        <div class = "col-sm-10"> 
+          <input [(ngModel)]="veiculos.color" required name = 'name' #veiculoName= 'ngModel' [ngClass]="{'is-invalid': veiculoName.invalid}" class= "form-control">
+              <div class="invalid-feedback">
+              <span>É necessário escolher uma cor para o veículo!</span>
+            </div>
+          </div>
+        </div>
+
+    <div class = "form-group row"> 
+      <label style="text-align: center;" class= "col-sm-10 col-fr-label">Preço do Veículo </label>
+        <div class = "col-sm-10"> 
+          <input [ngModel]="veiculos.price" required name = 'name' #veiculoPreco= 'ngModel' [ngClass]="{'is-invalid': veiculoPreco.invalid}" class= "form-control">
+     </div>
+  </div>
+  <P></P>
     <div class="form-group">
         <label for="inputCity" class="col-sm-2 control-label">Forma de pagamento:</label>
         <div class="col-sm-10">
@@ -94,6 +121,10 @@
         <button type="button" class="btn btn-primary" style="margin: 10px;">Confirmar Compra</button>
       </div>
     </div>
+
+    
+
+    
 </form>
 <footer>
   <p>&copy;Develoepd by João Victor S.</p> 

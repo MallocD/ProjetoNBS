@@ -4,29 +4,22 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './cores/nav-bar/nav-bar.component';
-import { HomeComponent } from './home/home.component';
-import { VeiculosComponent } from './veiculos/veiculos.component';
-import { ComprarComponent } from './comprar/comprar.component';
 import { FormsModule } from '@angular/forms';
-import { AudiComponents } from './veiculos_info/audi/audia8.component';
+import { HomeComponent } from './client/home/home.component';
+import { NavBarComponent } from './client/cores/nav-bar/nav-bar.component';
+import { ClientModule } from './client/client.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    VeiculosComponent,
-    NavBarComponent,
-    ComprarComponent,
-    AudiComponents
-   
-   
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    ClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

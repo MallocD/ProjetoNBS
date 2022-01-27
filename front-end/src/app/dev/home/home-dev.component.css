@@ -1,0 +1,42 @@
+body{
+    background-color: rgba(252, 252, 252, 0.836);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  section{
+    padding :50px;
+    background-color: white;
+    margin : auto;
+    width: 600px;
+    height: 200px;
+    border-radius:10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.527);
+  }
+  
+  footer{
+    font-style: italic;
+    font-size:15px;
+    background-color: rgb(13, 86, 243);
+    color: aliceblue;
+  
+    
+  }
+  p#p1{
+    text-align:justify;
+  }
+  a#a1{
+    font-size: 30px;
+    font-family: DejaVu Sans Mono, monospace;
+  }
+  h1{
+    background-color:rgb(13, 86, 243);
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.527);
+    border-radius:10px;
+    font-family: Didot, serif;
+    color: azure;
+  }
+  img{
+    border-radius: 300px;
+  }
+  

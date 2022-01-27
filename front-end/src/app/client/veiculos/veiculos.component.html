@@ -19,14 +19,14 @@
             <th>Options</th>
         </tr>
         <tr id= "t1" *ngFor= 'let veiculos of veiculos'>
-            <td><img [src]="veiculos.imageUrl" width="150" height="130"></td>
+            <td><img [src]="veiculos.imageUrl" width="150" height="100"></td>
             <td >{{veiculos.name}}</td>
             <td >R${{veiculos.price}}</td>
             <td >{{veiculos.date}}</td>
             <td>
-                <a style= "margin: 15px;" routerLink= "/veiculos/comprar" 
+                <a style= "margin: 15px;" [routerLink]= "['/veiculos/comprar',veiculos.code]" 
                 class="btn btn-success -mr2">Comprar</a>
-                <a [routerLink]= "['/veiculos/info',]" class="btn btn-info" >Informações</a>
+                <a [routerLink]= "['/veiculos/',veiculos.code]" class="btn btn-info" >Informações</a>
             </td>
             
         </tr>

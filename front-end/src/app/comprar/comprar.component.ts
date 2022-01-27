@@ -1,19 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { Clientes } from '../veiculos/cliente';
 import { Veiculos } from '../veiculos/veiculos';
 import { VeiculosService } from '../veiculos/veiculos.service';
 
 @Component({
-  selector: 'app-comprar',
   templateUrl: './comprar.component.html',
   styleUrls: ['./comprar.component.css']
 })
 export class ComprarComponent implements OnInit {
 
-  veiculos: Veiculos;
+  // veiculos: Veiculos;
+  cliente: Clientes[]= [];
 
-  constructor(private veiculosService:VeiculosService) { }
+  // constructor(private veiculosService:VeiculosService,) { }
 
   ngOnInit(): void {
+    
+    
   }
-
 }
+

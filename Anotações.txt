@@ -1,4 +1,4 @@
-Começar com o front, criar algo que envolva venda de carros, cadastrar carro comprado, data, informações do cliente e valor; 
+Começar com o front, criar algo que envolva venda de carros, cadastrar carro comprado, data, informações do cliente e valor; V
 Adicionar Tecnologias do veículo;
 Adicionar implementações que podem ser feitas no véiculo;
 É possível alterar dados de conta do cliente;
@@ -10,9 +10,9 @@ Cidade em que reside,
 Adicionar fotos
 
 Criar uma route que leve pra página de configuração dos Veículos e acesso ao banco de dados
-Criar uma route que leve para o cadrastro de cliente e compra de veículos
+Criar uma route que leve para o cadrastro de cliente e compra de veículos V
 
-Criar uma página de erro utilizando as rotas
+Criar uma página de erro utilizando as rotas V
 Utilizar rotas para criar uma página que faça requisição do banco de dados utilizando um caminho diferente
 
 ---Criar Método POST--> Adiciona nova compra feita pelo cliente

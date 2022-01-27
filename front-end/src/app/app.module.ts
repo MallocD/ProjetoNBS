@@ -8,6 +8,7 @@ import { NavBarComponent } from './cores/nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { VeiculosComponent } from './veiculos/veiculos.component';
 import { ComprarComponent } from './comprar/comprar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ComprarComponent } from './comprar/comprar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

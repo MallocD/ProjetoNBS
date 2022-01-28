@@ -69,23 +69,28 @@
     </div>
     <p></p>
     <div class="radio">
-        <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-            Pix
-        </label>
-    </div>
-    <div class="radio">
-        <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-           Transferência Bancária
-        </label>
-    </div>
-    <div class="radio ">
-        <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" >
-            Cartão de crédito ou débito
-        </label>
-    </div>
+      <label>
+          <input
+          [(ngModel)]="cliente.payment" 
+          required name = 'payment' #clientPayment= 'ngModel' [ngClass]="{'is-invalid': clientPayment.invalid}" type="radio" name="optionsRadios" id="optionsRadios1" value="Pix" checked>
+          Pix
+      </label>
+  </div>
+  <div class="radio">
+      <label>
+          <input [(ngModel)]="cliente.payment" 
+          required name = 'payment' #clientPayment= 'ngModel' [ngClass]="{'is-invalid': clientPayment.invalid}" type="radio" name="optionsRadios" id="optionsRadios2" value="Transferência Bancária">
+         Transferência Bancária
+      </label>
+  </div>
+  <div class="radio ">
+      <label>
+          <input  [(ngModel)]="cliente.payment" 
+          required name = 'payment' #clientPayment= 'ngModel' [ngClass]="{'is-invalid': clientPayment.invalid}"
+           type="radio" name="optionsRadios" id="optionsRadios3" value="Cor do Veículo" >
+          Cartão de crédito ou débito
+      </label>
+  </div>
     <hr>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">

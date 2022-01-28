@@ -64,31 +64,32 @@
     <hr>
     <p><br></p>
     <div class = "form-group row"> 
-      <label style="text-align: center;" class= "col-sm-10 col-fr-label">Nome do Veículo </label>
-        <div class = "col-sm-10"> 
-          <input  class= "form-control">
-            <div class="invalid-feedback">
-            <span>Course name is required!</span>
-          </div>
-        </div>
+      <label  class= "col-sm-10 col-fr-label">Nome do Veículo </label>
+      <input style="width: 500px ;" class="form-control" [(ngModel)]="cliente.vehicle" 
+      required name = 'vehicle' #clientVehicle= 'ngModel' [ngClass]="{'is-invalid': clientVehicle.invalid}" type="text"  list="vehicle">
+      <datalist id="vehicle">
+        <option >Tesla Model S</option>
+        <option >Toyota Mirai</option>
+        <option >Audi A8</option>
+        <option >	Volvo XC60 Polestar</option>
+        <option >	Honda Clarity Fuel Cell</option>
+      </datalist>
       </div>
 
-    <div class = "form-group row"> 
-      <label style="text-align: center;"class= "col-sm-10 col-fr-label">Cor do veículo </label>
-        <div class = "col-sm-10"> 
-          <input  class= "form-control">
-              <div class="invalid-feedback">
-              <span>É necessário escolher uma cor para o veículo!</span>
-            </div>
-          </div>
+      <div class = "form-group row"> 
+        <label  class= "col-sm-10 col-fr-label">Cor do Veículo</label>
+        <input style="width: 500px ;" class="form-control" [(ngModel)]="cliente.color" 
+        required name = 'color' #clientColor= 'ngModel' [ngClass]="{'is-invalid': clientColor.invalid}" type="text"  list="color">
+        <datalist id="color">
+          <option >Branco</option>
+          <option >Preto</option>
+          <option >Prata</option>
+          <option >Cinza</option>
+        </datalist>
         </div>
+          
 
-    <div class = "form-group row"> 
-      <label style="text-align: center;" class= "col-sm-10 col-fr-label">Preço do Veículo </label>
-        <div class = "col-sm-10"> 
-          <input  required name = 'name'  class= "form-control">
-     </div>
-  </div>
+    
   <P></P>
     <div class="form-group">
         <label for="inputCity" class="col-sm-2 control-label">Forma de pagamento:</label>
@@ -98,19 +99,24 @@
     <p></p>
     <div class="radio">
         <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            <input
+            [(ngModel)]="cliente.payment" 
+            required name = 'payment' #clientPayment= 'ngModel' [ngClass]="{'is-invalid': clientPayment.invalid}" type="radio" name="optionsRadios" id="optionsRadios1" value="Pix" checked>
             Pix
         </label>
     </div>
     <div class="radio">
         <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            <input [(ngModel)]="cliente.payment" 
+            required name = 'payment' #clientPayment= 'ngModel' [ngClass]="{'is-invalid': clientPayment.invalid}" type="radio" name="optionsRadios" id="optionsRadios2" value="Transferência Bancária">
            Transferência Bancária
         </label>
     </div>
     <div class="radio ">
         <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" >
+            <input  [(ngModel)]="cliente.payment" 
+            required name = 'payment' #clientPayment= 'ngModel' [ngClass]="{'is-invalid': clientPayment.invalid}"
+             type="radio" name="optionsRadios" id="optionsRadios3" value="Cor do Veículo" >
             Cartão de crédito ou débito
         </label>
     </div>

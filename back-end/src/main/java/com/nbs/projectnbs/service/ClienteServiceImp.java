@@ -34,6 +34,10 @@ public class ClienteServiceImp implements ClienteService {
 
     @Override
     public Cliente delete(int id) {
-        throw new UnsupportedOperationException("Not suported yet");
+        Cliente c =repository.findById(id);
+        if(c!=null){
+            repository.delete(c);
+        }
+        return c;
     }
 }

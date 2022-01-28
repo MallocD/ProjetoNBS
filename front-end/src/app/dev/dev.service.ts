@@ -26,5 +26,8 @@ export class ComprarService{
     uptadeClient(cliente:Clientes){
         return this.http.put<Clientes>(this.Url+"/"+cliente.id,cliente)
     }
+    deleteCliente(cliente:Clientes){
+        return this.http.delete<Clientes>(this.Url+"/"+cliente.id)
+    }
 
 }

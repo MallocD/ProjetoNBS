@@ -32,5 +32,9 @@ public class ClienteController {
         c.setId(id);
         return service.edit(c);
     }
+    @DeleteMapping(path = {"/{id}"})
+    public Cliente delete (@PathVariable("id") int id){
+        return service.delete(id);
+    }
 
 }

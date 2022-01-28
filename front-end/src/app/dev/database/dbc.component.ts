@@ -25,6 +25,13 @@ export class DbcComponent implements OnInit{
         this.router.navigate(["dev$/edit"])//Arrumar
 
     }
+    Delete(cliente:Clientes){
+        this.service.deleteCliente(cliente)
+        .subscribe(data=>{
+            this.clientes=this.clientes.filter(c=>c!==cliente);
+            alert("O Cliente foi excluído do Banco do dados")
+        })
+    }
     
 
 }

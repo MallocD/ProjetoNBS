@@ -38,7 +38,7 @@
                 <td>{{clients.payment}}</td>
                 <td>
                     <a style= "margin: 15px;" (click)= "Editar(clients)" class="btn btn-warning -mr2">Edit</a>
-                    <a  class="btn btn-danger" >Delete</a>
+                    <a  (click)="Delete(clients)" class="btn btn-danger" >Delete</a>
                 </td>
 
             </tr>

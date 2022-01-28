@@ -7,5 +7,8 @@ export class Clientes{
     email: string;
     city: string;
     state: string
+    color: string
+    vehicle: string
+    payment: string
 
 }

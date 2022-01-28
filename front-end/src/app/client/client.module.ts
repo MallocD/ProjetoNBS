@@ -5,6 +5,7 @@ import { AppRoutingModule } from "../app-routing.module";
 import { ComprarComponent } from "./comprar/comprar.component";
 import { NavBarComponent } from "./cores/nav-bar/nav-bar.component";
 import { HomeComponent } from "./home/home.component";
+import { VeiculosInfoModule } from "./veiculos-info/veiculos-info.module";
 import { VeiculosComponent } from "./veiculos/veiculos.component";
 
 @NgModule({
@@ -19,7 +20,8 @@ import { VeiculosComponent } from "./veiculos/veiculos.component";
     imports:[
     CommonModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    VeiculosInfoModule
 ],
 exports: [
     NavBarComponent

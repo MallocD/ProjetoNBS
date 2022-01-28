@@ -1,28 +1,26 @@
-Começar com o front, criar algo que envolva venda de carros, cadastrar carro comprado, data, informações do cliente e valor; V
-Adicionar Tecnologias do veículo;
-Adicionar implementações que podem ser feitas no véiculo;
 É possível alterar dados de conta do cliente;
 Alterar estado em que reside;
 Apagar solicitação de compra do cliente;
 Apagar número de telefone do cliente;
 Atualizar dados de um cliente;
 Cidade em que reside, 
-Adicionar fotos
-
-Criar uma route que leve pra página de configuração dos Veículos e acesso ao banco de dados
-Criar uma route que leve para o cadrastro de cliente e compra de veículos V
-
-Criar uma página de erro utilizando as rotas V
-Utilizar rotas para criar uma página que faça requisição do banco de dados utilizando um caminho diferente
-
 ---Criar Método POST--> Adiciona nova compra feita pelo cliente
 ---Criar um método GET--> Retornar o histórico de compras
 ---Criar um método PUT--> Atualizar os dados do cliente
----Criar um método DELETE---> Apagar dados de um cliente ou compras feitas;
-
-Utilizar as classes do bootstrap
 Próximo passo : 
 Converter os dados salvos para o backend, utilizando o JPA e SPRING BOOT; 
 Converter os dados para o banco de dados utilizando o JPA com o banco de dados ORACLE;
+
+//Começar com o front, criar algo que envolva venda de carros, cadastrar carro comprado, data, informações do cliente e valor; V
+//Adicionar Tecnologias do veículo;x
+X Adicionar implementações que podem ser feitas no véiculo;
+//Adicionar fotos
+//Criar uma route que leve pra página de configuração dos Veículos e acesso ao banco de dados
+//Criar uma route que leve para o cadrastro de cliente e compra de veículos V
+//Criar uma página de erro utilizando as rotas V
+//Utilizar rotas para criar uma página que faça requisição do banco de dados utilizando um caminho diferente
+
+---Criar um método DELETE---> Apagar dados de um cliente ou compras feitas;
+//Utilizar as classes do bootstrap
 
 Vai dar tudo certo! Confio em mim mesmo!!

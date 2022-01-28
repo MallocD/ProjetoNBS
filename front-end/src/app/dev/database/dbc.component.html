@@ -1,0 +1,48 @@
+  
+<h1 >Customer database</h1>
+<p></p>
+<a  routerLink="/dev$/dbc/test" class="nav-link"  style="margin: 10px;" class="btn btn-info" >List customers</a>
+<a routerLink="/dev$/dbc" class="nav-link"  class="btn btn-warning" >Close list</a>
+<p></p>
+
+<table class="table table-bordered">
+    <thead >
+        <tr id= "t2">
+            <th id= "t2">Id </th>
+            <th id= "t2" >FirstName</th>
+            <th id= "t2">LastName</th>
+            <th id= "t2">CPF</th>
+            <th id= "t2">E-mail</th>
+            <th id= "t2">BirthData</th>
+            <th id= "t2">City</th>
+            <th id= "t2">State</th>
+            <th id= "t2">Vehicle Purchased</th>
+            <th id= "t2">Vehicle color</th>
+            <th id= "t2">Form of payment</th>
+            <th id= "t2">Options</th>
+        </tr>
+        <tr>
+            <th>1 </th>
+            <th>João Victor</th>
+            <th>Santana</th>
+            <th>093.932.489-89</th>
+            <th>joa@dhjfm.com</th>
+            <th>23/03/2003</th>
+            <th>Cuiaba</th>
+            <th>Mato Grosso</th>
+            <th>Toyota</th>
+            <th>Branco</th>
+            <th>Credito</th>
+
+            <td>
+                <a style= "margin: 15px;" [routerLink]= "['/dev$/dbc/edit',]" 
+                class="btn btn-warning -mr2">Edit</a>
+                <a  class="btn btn-danger" >Delete</a>
+            </td>
+        </tr>
+
+    </thead>
+  </table>
+    <footer>
+      <p style="text-align: center;">&copy;Develoepd by João Victor S.</p> 
+    </footer>

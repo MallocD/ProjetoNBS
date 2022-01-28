@@ -11,12 +11,14 @@ import { HomeComponent } from './client/home/home.component';
 import { VeiculosComponent } from './client/veiculos/veiculos.component';
 import { VeiculosEditComponent } from './dev/veiculos-edit/veiculos-edit.component';
 import { DevCompononent } from './dev/dev.component';
+import { DbcComponent } from './dev/database/dbc.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
+  {path: '', component: HomeComponent},
   {path: 'dev$', component: HomeDevComponent},
   {path: 'dev$/veiculos', component: VeiculosEditComponent},
   {path: 'dev$/dbc', component: DevCompononent},
+  {path: 'dev$/dbc/test', component: DbcComponent},
   {path: 'veiculos', component: VeiculosComponent },
   {path: 'veiculos/comprar' ,component: ComprarComponent },
   {path: 'veiculos/comprar/:code' ,component: ComprarComponent },

@@ -1,15 +1,21 @@
 import { HttpClient } from "@angular/common/http";
-import { Veiculos } from "../client/veiculos/veiculos";
+import { Inject, Injectable } from "@angular/core";
+import { Clientes } from "../client/comprar/clientes";
+
+@Injectable({
+    providedIn: 'root'
+})
 
 export class ComprarService{
+
     constructor(private http: HttpClient){
     }
-    Url= 'http://localhost:8080/Clientes'
+    Url= 'test/clientes'
 
     
 
     getClients(){
-        return this.http.get<Veiculos[]>(this.Url)
+        return this.http.get<Clientes[]>(this.Url)
     }
 
 }

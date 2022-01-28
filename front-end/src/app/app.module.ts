@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { ClientModule } from './client/client.module';
 import { DevModule } from './dev/dev.module';
 import { VeiculosComponent } from './client/veiculos/veiculos.component';
+import { ComprarService } from './dev/dev.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,9 +23,10 @@ import { VeiculosComponent } from './client/veiculos/veiculos.component';
     RouterModule,
     FormsModule,
     ClientModule,
-    DevModule
+    DevModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ComprarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

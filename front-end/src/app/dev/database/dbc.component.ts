@@ -1,9 +1,25 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
+import { Clientes } from "src/app/client/comprar/clientes";
+import { ComprarService } from "../dev.service";
 
 @Component({
     templateUrl: './dbc.component.html',
     styleUrls: ['./dbc.component.css']
 })
-export class DbcComponent{
+export class DbcComponent implements OnInit{
+
+    clientes: Clientes[];
+
+    constructor(private service:ComprarService, private router:Router){}
+   
+    ngOnInit(): void {
+        this.service.getClients()
+        .subscribe(data=>{
+            this.clientes = data;
+        })
+        
+    }
+    
 
 }

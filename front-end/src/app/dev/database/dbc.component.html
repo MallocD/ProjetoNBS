@@ -22,26 +22,34 @@
             <th id= "t2">Options</th>
         </tr>
         <tr>
-            <th>1 </th>
-            <th>João Victor</th>
-            <th>Santana</th>
-            <th>093.932.489-89</th>
-            <th>joa@dhjfm.com</th>
-            <th>23/03/2003</th>
-            <th>Cuiaba</th>
-            <th>Mato Grosso</th>
-            <th>Toyota</th>
-            <th>Branco</th>
-            <th>Credito</th>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let clients of clientes " class= "text-center">
+                <td>{{clients.id}}</td>
+                <td>{{clients.name}}</td>
+                <td>{{clients.last}}</td>
+                <td>{{clients.cpf}}</td>
+                <td>{{clients.email}}</td>
+                <td>{{clients.birth}}</td>
+                <td>{{clients.city}}</td>
+                <td>{{clients.state}}</td>
+                <td>{{clients.birth}}</td>
+                <td>{{clients.birth}}</td>
+                <td>{{clients.birth}}</td>
+                <td>
+                    <a style= "margin: 15px;" [routerLink]= "['/dev$/dbc/edit',]" 
+                    class="btn btn-warning -mr2">Edit</a>
+                    <a  class="btn btn-danger" >Delete</a>
+                </td>
 
-            <td>
-                <a style= "margin: 15px;" [routerLink]= "['/dev$/dbc/edit',]" 
-                class="btn btn-warning -mr2">Edit</a>
-                <a  class="btn btn-danger" >Delete</a>
-            </td>
-        </tr>
+            </tr>
 
-    </thead>
+        </tbody>
+            
+
+            
+    
+
   </table>
     <footer>
       <p style="text-align: center;">&copy;Develoepd by João Victor S.</p> 

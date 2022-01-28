@@ -1,1 +1,34 @@
 <app-dev-bar> </app-dev-bar>
+<table class="table">
+    <thead >
+        <tr id= "t2">
+            <th>Id </th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>CPF</th>
+            <th>E-mail</th>
+            <th>BirthData</th>
+            <th>City</th>
+            <th>State</th>
+        </tr>
+        <tr>
+            <th>1 </th>
+            <th>João Victor</th>
+            <th>Santana</th>
+            <th>093.932.489-89</th>
+            <th>joa@dhjfm.com</th>
+            <th>23/03/2003</th>
+            <th>Cuiaba</th>
+            <th>Mato Grossp</th>
+
+            <td>
+                <a style= "margin: 15px;" [routerLink]= "['/dev$/dbc/edit',]" 
+                class="btn btn-warning -mr2">Edit</a>
+                <a  class="btn btn-danger" >Delete</a>
+            </td>
+
+
+        </tr>
+
+    </thead>
+  </table>

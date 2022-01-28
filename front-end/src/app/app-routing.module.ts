@@ -9,10 +9,14 @@ import { ToytaComponents } from './client/veiculos-info/toyota/toyota.component'
 import { VolvoComponents } from './client/veiculos-info/volvo/volvo.component';
 import { HomeComponent } from './client/home/home.component';
 import { VeiculosComponent } from './client/veiculos/veiculos.component';
+import { VeiculosEditComponent } from './dev/veiculos-edit/veiculos-edit.component';
+import { DevCompononent } from './dev/dev.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'dev$', component: HomeDevComponent},
+  {path: 'dev$/veiculos', component: VeiculosEditComponent},
+  {path: 'dev$/dbc', component: DevCompononent},
   {path: 'veiculos', component: VeiculosComponent },
   {path: 'veiculos/comprar' ,component: ComprarComponent },
   {path: 'veiculos/comprar/:code' ,component: ComprarComponent },

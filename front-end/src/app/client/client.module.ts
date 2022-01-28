@@ -11,7 +11,6 @@ import { VeiculosComponent } from "./veiculos/veiculos.component";
 @NgModule({
     declarations:[
         HomeComponent,
-        VeiculosComponent,
         ComprarComponent,
         NavBarComponent
 

@@ -18,25 +18,40 @@ body{
     font-size:15px;
     background-color: rgb(0, 0, 0);
     color: aliceblue;
+    text-align: center;
   
     
   }
-  p{
+  p#p1{
     text-align:justify;
   }
-  a#a1{
-    font-size: 30px;
+  a{
+    font-size: 22px;
     font-family: DejaVu Sans Mono, monospace;
+    border-radius: 0 15px;
   }
   h1{
-    background-color:rgb(3, 5, 10);
+    background-color:rgb(0, 0, 0);
     text-align: center;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.527);
-    border-radius: 5px 10px;
+    border-radius:10px;
     font-family: Didot, serif;
     color: azure;
   }
   img{
-    border-radius: 30px;
+    border-radius: 300px;
+  }
+  th{
+    font-size: 27px;
+    background-color: rgb(3, 7, 14);
+    color: aliceblue;
+  }
+  tr#t1{
+    background-color: rgb(244, 248, 247);
+    font-family:Impact fantasy; 
+    font-size: 25px;
+  }
+  tr#t2{
+   border-radius: 200px;
   }
   

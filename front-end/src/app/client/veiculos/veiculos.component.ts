@@ -11,15 +11,16 @@ import { Veiculos } from './veiculos';
 })
 export class VeiculosComponent implements OnInit {
   
-  veiculos: Veiculos[] = []; 
+
+  veiculos : Veiculos []= [];
+  // _veiculos: Veiculos [] = [];
+  
   retriveByCode(code:number): Veiculos{
-    return this.veiculos.find((veiculosIterator: Veiculos) =>
-    veiculosIterator.code === code)!;
+    return this.veiculos.find((veiculosIterator: Veiculos) =>veiculosIterator.code === code)!;
   }
 
   ngOnInit(): void {
-    
-    this.veiculos = [
+      this.veiculos= [
       
         {
           code: 6,
@@ -62,8 +63,10 @@ export class VeiculosComponent implements OnInit {
         color: ''
     }
     
-      
-    ]
-  }
-
+  
+  ];
 }
+}
+
+
+

@@ -1,0 +1,15 @@
+<h> Edição de veículos</h>
+
+<hr>
+<form #veiculosForm= "ngForm" >
+    <div class = "form-group row"> 
+        <label class= "col-sm-10 col-fr-label">Nome do veiculo: </label>
+        <div class = "col-sm-10"> 
+            <input [(ngModel)]="veiculos.name" required name = 'name' #courseName= 'ngModel' [ngClass]="{'is-invalid': courseName.invalid}" class= "form-control">
+            
+            <div class="invalid-feedback">
+                <span>Course name is required!</span>
+            </div>
+        </div>
+    </div>
+</form>

@@ -17,5 +17,14 @@ export class ComprarService{
     getClients(){
         return this.http.get<Clientes[]>(this.Url)
     }
+    confirmPurchase(clientes:Clientes){
+        return this.http.post<Clientes>(this.Url,clientes);
+    }
+    getClientId(id:number){
+        return this.http.get<Clientes>(this.Url+"/"+id)
+    }
+    uptadeClient(cliente:Clientes){
+        return this.http.put<Clientes>(this.Url+"/"+cliente.id,cliente)
+    }
 
 }

@@ -12,10 +12,12 @@ import { VeiculosComponent } from './client/veiculos/veiculos.component';
 import { VeiculosEditComponent } from './dev/veiculos-edit/veiculos-edit.component';
 import { DevCompononent } from './dev/dev.component';
 import { DbcComponent } from './dev/database/dbc.component';
+import { EditClientComponent } from './dev/client-edit/edit-client.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'dev$', component: HomeDevComponent},
+  {path: 'dev$/edit', component:EditClientComponent},
   {path: 'dev$/veiculos', component: VeiculosEditComponent},
   {path: 'dev$/dbc', component: DevCompononent},
   {path: 'dev$/dbc/test', component: DbcComponent},

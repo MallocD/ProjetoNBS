@@ -20,6 +20,11 @@ export class DbcComponent implements OnInit{
         })
         
     }
+    Editar(cliente:Clientes):void{
+        localStorage.setItem("id",cliente.id.toString())
+        this.router.navigate(["dev$/edit"])//Arrumar
+
+    }
     
 
 }

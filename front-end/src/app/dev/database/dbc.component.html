@@ -37,8 +37,7 @@
                 <td>{{clients.color}}</td>
                 <td>{{clients.payment}}</td>
                 <td>
-                    <a style= "margin: 15px;" [routerLink]= "['/dev$/dbc/edit',]" 
-                    class="btn btn-warning -mr2">Edit</a>
+                    <a style= "margin: 15px;" (click)= "Editar(clients)" class="btn btn-warning -mr2">Edit</a>
                     <a  class="btn btn-danger" >Delete</a>
                 </td>
 

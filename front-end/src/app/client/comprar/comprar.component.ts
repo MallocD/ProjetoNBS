@@ -1,7 +1,7 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Veiculos } from '../veiculos/veiculos';
-import { VeiculosComponent } from '../veiculos/veiculos.component';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ComprarService } from 'src/app/dev/dev.service';
+import { Clientes } from './clientes';
 
 
 @Component({
@@ -11,17 +11,39 @@ import { VeiculosComponent } from '../veiculos/veiculos.component';
 export class ComprarComponent implements OnInit {
 
   // veiculos: Veiculos;
-  veiculos: Veiculos;
+  // veiculos: Veiculos;
 
-  constructor(private veiculosComponent: VeiculosComponent, private activadedRoute: ActivatedRoute){}
+  // constructor(private veiculosComponent: VeiculosComponent, private activadedRoute: ActivatedRoute){}
+  
+  cliente: Clientes ={
+    id: 0,
+    name: '',
+    last: '',
+    birth: '',
+    cpf: '',
+    email: '',
+    city: '',
+    state:'',
+    color:'',
+    vehicle:'',
+    payment:'',
 
-  // constructor(private veiculosService:VeiculosService,) { }
+  }
+constructor(private router:Router, private service:ComprarService){}
 
   ngOnInit(): void {
+  }
+
+  confirm(){
+    this.service.confirmPurchase(this.cliente)
+    .subscribe(data=>{
+      alert("Compra efetuada com sucesso!");
+      this.router.navigate([""]);
+    })
+  }
    
-    this.veiculos = this.veiculosComponent.retriveByCode(+this.activadedRoute.snapshot.paramMap.get('code')!);
+    // this.veiculos = this.veiculosComponent.retriveByCode(+this.activadedRoute.snapshot.paramMap.get('code')!);
         
     
-  }
 }
 

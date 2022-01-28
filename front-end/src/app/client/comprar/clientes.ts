@@ -1,3 +1,4 @@
+
 export class Clientes{
     id: number;
     name: string;
@@ -12,3 +13,4 @@ export class Clientes{
     payment: string
 
 }
+

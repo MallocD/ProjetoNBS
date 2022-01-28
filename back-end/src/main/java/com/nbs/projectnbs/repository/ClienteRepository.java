@@ -9,7 +9,7 @@ import java.util.List;
 public interface ClienteRepository extends Repository<Cliente, Integer> {
 
     List<Cliente> findAll();
-//    Cliente findOne(int id);
+    Cliente findById(int id);
     Cliente save(Cliente c);
     void delete(Cliente c);
 

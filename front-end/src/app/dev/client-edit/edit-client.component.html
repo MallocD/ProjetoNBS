@@ -1,6 +1,5 @@
-<app-nav-bar></app-nav-bar>
 
-<h2> Carrinho</h2>
+<h2> Editar informações do Cliente</h2>
 
 <hr/>
 <p><br></p>
@@ -62,34 +61,7 @@
       </div>
     </div>
     <hr>
-    <p><br></p>
-    <div class = "form-group row"> 
-      <label style="text-align: center;" class= "col-sm-10 col-fr-label">Nome do Veículo </label>
-        <div class = "col-sm-10"> 
-          <input  class= "form-control">
-            <div class="invalid-feedback">
-            <span>Course name is required!</span>
-          </div>
-        </div>
-      </div>
 
-    <div class = "form-group row"> 
-      <label style="text-align: center;"class= "col-sm-10 col-fr-label">Cor do veículo </label>
-        <div class = "col-sm-10"> 
-          <input  class= "form-control">
-              <div class="invalid-feedback">
-              <span>É necessário escolher uma cor para o veículo!</span>
-            </div>
-          </div>
-        </div>
-
-    <div class = "form-group row"> 
-      <label style="text-align: center;" class= "col-sm-10 col-fr-label">Preço do Veículo </label>
-        <div class = "col-sm-10"> 
-          <input  required name = 'name'  class= "form-control">
-     </div>
-  </div>
-  <P></P>
     <div class="form-group">
         <label for="inputCity" class="col-sm-2 control-label">Forma de pagamento:</label>
         <div class="col-sm-10">
@@ -119,15 +91,15 @@
         <div class="col-sm-offset-2 col-sm-10">
           <div class="checkbox">
             <label>
-              <input type=checkbox required name = "check" [ngModel] > Eu li e concordo com os termos 
+              <input type=checkbox required name = "check" [ngModel] > Confirmar Atualização
             </label>
           </div>
         </div>
       </div>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <button routerLink='/veiculos' class ="btn btn-secondary "> Retornar </button> 
-        <button (click)="confirm()" [disabled]="clientForm.invalid"  type="button" class="btn btn-primary" style="margin: 10px;">Confirmar Compra</button>
+        <button routerLink='/dev$/dbc' class ="btn btn-secondary "> Retornar </button> 
+        <button routerLink='/dev$/dbc' (click)="Att(cliente)" [disabled]="clientForm.invalid" type="button" class="btn btn-primary" style="margin: 10px;">Atualizar Dados</button>
       </div>
     </div>
 

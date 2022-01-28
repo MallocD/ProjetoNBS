@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { AppRoutingModule } from "../app-routing.module";
 import { VeiculosComponent } from "../client/veiculos/veiculos.component";
+import { EditClientComponent } from "./client-edit/edit-client.component";
 import { DbcComponent } from "./database/dbc.component";
 import { DevCompononent } from "./dev.component";
 import { HomeDevComponent } from "./home/home-dev.component";
@@ -16,7 +17,8 @@ import {  VeiculosEditComponent } from "./veiculos-edit/veiculos-edit.component"
         HomeDevComponent,
         VeiculosEditComponent,
         DevCompononent,
-        DbcComponent
+        DbcComponent,
+        EditClientComponent
     ],
     imports:[
     CommonModule,

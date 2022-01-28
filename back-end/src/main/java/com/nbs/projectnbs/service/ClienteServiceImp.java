@@ -19,17 +19,17 @@ public class ClienteServiceImp implements ClienteService {
 
     @Override
     public Cliente listarId(int id) {
-        throw new UnsupportedOperationException("Not suported yet");
+        return repository.findById(id);
     }
 
     @Override
     public Cliente add(Cliente c) {
-        throw new UnsupportedOperationException("Not suported yet");
+        return repository.save(c);
     }
 
     @Override
     public Cliente edit(Cliente c) {
-        throw new UnsupportedOperationException("Not suported yet");
+        return repository.save(c);
     }
 
     @Override

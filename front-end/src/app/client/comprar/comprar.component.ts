@@ -1,6 +1,8 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ComprarService } from 'src/app/dev/dev.service';
+import { Veiculos } from '../veiculos/veiculos';
+import { VeiculosService } from '../veiculos/veiculos.service';
 import { Clientes } from './clientes';
 
 
@@ -29,10 +31,13 @@ export class ComprarComponent implements OnInit {
     payment:'',
 
   }
-constructor(private router:Router, private service:ComprarService){}
+constructor(private router:Router, private service:ComprarService,private actvatedRoute:ActivatedRoute, private vehiclesService: VeiculosService){}
 
-  ngOnInit(): void {
-  }
+// veiculos: Veiculos;
+
+// this.veiculos = this.vehiclesService.retrieveByCode(+this.actvatedRoute.snapshot.paramMap.get("code")!);
+
+  ngOnInit(): void {}
 
   confirm(){
     this.service.confirmPurchase(this.cliente)
@@ -42,7 +47,6 @@ constructor(private router:Router, private service:ComprarService){}
     })
   }
    
-    // this.veiculos = this.veiculosComponent.retriveByCode(+this.activadedRoute.snapshot.paramMap.get('code')!);
         
     
 }

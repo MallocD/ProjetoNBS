@@ -5,6 +5,7 @@
 <p><br></p>
 
 <form #clientForm='ngForm' *ngIf='cliente' class="form-horizontal">
+  <div class="col-md-6 offset-md-3">
     <div class="form-group">
       <label for="exampleInputName2" class="col-sm-2 control-label">Primeiro Nome</label>
       <div class="col-sm-10">
@@ -60,37 +61,7 @@
         required name = 'state' #clientState= 'ngModel' [ngClass]="{'is-invalid': clientState.invalid}" placeholder="Ex: Mato-Grosso">
       </div>
     </div>
-    <hr>
-
-    <div class="form-group">
-        <label for="inputCity" class="col-sm-2 control-label">Forma de pagamento:</label>
-        <div class="col-sm-10">
-        </div>
-    </div>
-    <p></p>
-    <div class="radio">
-      <label>
-          <input
-          [(ngModel)]="cliente.payment" 
-          required name = 'payment' #clientPayment= 'ngModel' [ngClass]="{'is-invalid': clientPayment.invalid}" type="radio" name="optionsRadios" id="optionsRadios1" value="Pix" checked>
-          Pix
-      </label>
-  </div>
-  <div class="radio">
-      <label>
-          <input [(ngModel)]="cliente.payment" 
-          required name = 'payment' #clientPayment= 'ngModel' [ngClass]="{'is-invalid': clientPayment.invalid}" type="radio" name="optionsRadios" id="optionsRadios2" value="Transferência Bancária">
-         Transferência Bancária
-      </label>
-  </div>
-  <div class="radio ">
-      <label>
-          <input  [(ngModel)]="cliente.payment" 
-          required name = 'payment' #clientPayment= 'ngModel' [ngClass]="{'is-invalid': clientPayment.invalid}"
-           type="radio" name="optionsRadios" id="optionsRadios3" value="Cor do Veículo" >
-          Cartão de crédito ou débito
-      </label>
-  </div>
+    <div class="col-md-6 offset-md-3">
     <hr>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
@@ -107,11 +78,10 @@
         <button routerLink='/dev$/dbc' (click)="Att(cliente)" [disabled]="clientForm.invalid" type="button" class="btn btn-primary" style="margin: 10px;">Atualizar Dados</button>
       </div>
     </div>
-
+  </div>
+  </div>
     
 
     
 </form>
-<footer>
-  <p>&copy;Develoepd by João Victor S.</p> 
-</footer>
+

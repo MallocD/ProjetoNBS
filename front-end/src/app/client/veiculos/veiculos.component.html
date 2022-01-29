@@ -19,7 +19,7 @@
             <th>Data de Lançamento</th>
             <th>Options</th>
         </tr>
-        <tr id= "t1" *ngFor= 'let veiculos of veiculos'>
+        <tr id= "t1" *ngFor= 'let veiculos of filteredVehicle'>
             <td><img [src]="veiculos.imageUrl" width="150" height="100"></td>
             <td >{{veiculos.name}}</td>
             <td >R${{veiculos.price}}</td>
@@ -39,6 +39,4 @@
         
     
 </table>
-<footer>
-    <p>&copy;Develoepd by João Victor S.</p> 
-</footer>
+

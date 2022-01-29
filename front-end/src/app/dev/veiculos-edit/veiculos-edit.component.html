@@ -19,13 +19,13 @@
             <th>Data de Lançamento</th>
             <th>Options</th>
         </tr>
-        <tr id= "t1" *ngFor= 'let veiculos of veiculos'>
+        <tr id= "t1" *ngFor= 'let veiculos of filteredVehicle'>
             <td><img [src]="veiculos.imageUrl" width="150" height="100"></td>
             <td >{{veiculos.name}}</td>
             <td >R${{veiculos.price}}</td>
             <td >{{veiculos.date}}</td>
             <td>
-                <a style= "margin: 15px;" [routerLink]= "['/dev$/veiculos',veiculos.code]" 
+                <a style= "margin: 15px;" [routerLink]= "['/dev$/veiculos/edit',veiculos.code]" 
                 class="btn btn-warning">Editar</a>
             </td>
             
@@ -38,6 +38,4 @@
         
     
 </table>
-<footer>
-    <p>&copy;Develoepd by João Victor S.</p> 
-</footer>
+

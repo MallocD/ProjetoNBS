@@ -8,6 +8,7 @@ import { DbcComponent } from "./database/dbc.component";
 import { DevCompononent } from "./dev.component";
 import { HomeDevComponent } from "./home/home-dev.component";
 import { NavBarDevComponent } from "./nav-bar/nav-bar.component";
+import { UserComponent } from "./user-dev/user.component";
 import { EditingVehicleComponent } from "./veiculos-edit/editing-vehicle.component";
 import {  VeiculosEditComponent } from "./veiculos-edit/veiculos-edit.component";
 
@@ -21,6 +22,7 @@ import {  VeiculosEditComponent } from "./veiculos-edit/veiculos-edit.component"
         DbcComponent,
         EditClientComponent,
         EditingVehicleComponent,
+        UserComponent
     ],
     imports:[
     CommonModule,

@@ -20,7 +20,7 @@ import {  VeiculosEditComponent } from "./veiculos-edit/veiculos-edit.component"
         DevCompononent,
         DbcComponent,
         EditClientComponent,
-        EditingVehicleComponent
+        EditingVehicleComponent,
     ],
     imports:[
     CommonModule,

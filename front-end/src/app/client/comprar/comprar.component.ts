@@ -12,10 +12,7 @@ import { Clientes } from './clientes';
 })
 export class ComprarComponent implements OnInit {
 
-  // veiculos: Veiculos;
-  // veiculos: Veiculos;
 
-  // constructor(private veiculosComponent: VeiculosComponent, private activadedRoute: ActivatedRoute){}
   
   cliente: Clientes ={
     id: 0,
@@ -43,7 +40,7 @@ ngOnInit(): void {
     this.service.confirmPurchase(this.cliente)
     .subscribe(data=>{
       alert("Compra efetuada com sucesso!");
-      this.router.navigate([""]);
+      this.router.navigate(["$"]);
     })
   }
    

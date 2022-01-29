@@ -1,40 +1,41 @@
 <h2> Edição de veículos</h2>
 
 <hr>
-<form #veiculosForm= "ngForm"  *ngIf='veiculos' class="form-horizontal">
+<form #veiculosForm="ngForm" *ngIf='veiculos' class="form-horizontal">
     <div class="col-md-6 offset-md-3">
-    <div class = "form-group row"> 
-        <label class= "col-sm-10 col-fr-label">Nome do veiculo: </label>
-            <div class = "col-sm-10"> 
-                <input [(ngModel)]="veiculos.name" name= "name" class= "form-control">
+        <div class="form-group row">
+            <label class="col-sm-10 col-fr-label">Nome do veiculo: </label>
+            <div class="col-sm-10">
+                <input [(ngModel)]="veiculos.name" name="name" class="form-control">
+            </div>
         </div>
-    </div>
 
-    <div class = "form-group row"> 
-        <label class= "col-sm-10 col-fr-label">Preço do veículo </label>
-            <div class = "col-sm-10"> 
-                <input [(ngModel)]="veiculos.price" name= "price" class= "form-control">       
+        <div class="form-group row">
+            <label class="col-sm-10 col-fr-label">Preço do veículo </label>
+            <div class="col-sm-10">
+                <input [(ngModel)]="veiculos.price" name="price" class="form-control">
+            </div>
         </div>
-    </div>
-    <div class = "form-group row"> 
-        <label class= "col-sm-10 col-fr-label">Data do veículo</label>
-            <div class = "col-sm-10"> 
-                <input [(ngModel)]="veiculos.date" name= "date" class= "form-control">       
+        <div class="form-group row">
+            <label class="col-sm-10 col-fr-label">Data do veículo</label>
+            <div class="col-sm-10">
+                <input [(ngModel)]="veiculos.date" name="date" class="form-control">
+            </div>
         </div>
-    </div>
 
-    <div class="checkbox">
-      <label>
-        <input type=checkbox required name = "check" [ngModel] > Confirmar Atualização
-      </label>
-    </div>
-    <p></p>
-<div class="form-group">
-<div class="col-sm-offset-2 col-sm-10">
-        <button routerLink='/dev$/veiculos' class ="btn btn-secondary "> Retornar </button> 
-        <button routerLink='/dev$/veiculos' (click)="save()" [disabled]="veiculosForm.invalid" type="button" class="btn btn-primary" style="margin: 10px;">Atualizar Dados</button>
+        <div class="checkbox">
+            <label>
+                <input type=checkbox required name="check" [ngModel]> Confirmar Atualização
+            </label>
+        </div>
+        <p></p>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button routerLink='/$/dev$/veiculos' class="btn btn-secondary "> Retornar </button>
+                <button routerLink='/$/dev$/veiculos' (click)="save()" [disabled]="veiculosForm.invalid" type="button"
+                    class="btn btn-primary" style="margin: 10px;">Atualizar Dados</button>
             </div>
         </div>
     </div>
-    
+
 </form>

@@ -1,7 +1,6 @@
-
 <h2> Editar informações do Cliente</h2>
 
-<hr/>
+<hr />
 <p><br></p>
 
 <form #clientForm='ngForm' *ngIf='cliente' class="form-horizontal">
@@ -9,79 +8,79 @@
     <div class="form-group">
       <label for="exampleInputName2" class="col-sm-2 control-label">Primeiro Nome</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" [(ngModel)]="cliente.name" 
-         required name = 'name' #clientName= 'ngModel' [ngClass]="{'is-invalid': clientName.invalid}" placeholder="Ex: Marcio">
+        <input type="text" class="form-control" [(ngModel)]="cliente.name" required name='name' #clientName='ngModel'
+          [ngClass]="{'is-invalid': clientName.invalid}" placeholder="Ex: Marcio">
       </div>
       <P></P>
     </div>
     <div class="form-group">
       <label for="exampleInputLastName2" class="col-sm-2 control-label">Sobrenome</label>
       <div class="col-sm-10">
-        <input type="lastName" class="form-control" [(ngModel)]="cliente.last" 
-        required name = 'last' #clientLast= 'ngModel' [ngClass]="{'is-invalid': clientLast.invalid}" placeholder="Ex: Da Silva">
+        <input type="lastName" class="form-control" [(ngModel)]="cliente.last" required name='last'
+          #clientLast='ngModel' [ngClass]="{'is-invalid': clientLast.invalid}" placeholder="Ex: Da Silva">
       </div>
       <P></P>
     </div>
     <div class="form-group">
       <label for="inputCpf" class="col-sm-2 control-label">CPF</label>
       <div class="col-sm-10">
-        <input type="cpf" class="form-control" [(ngModel)]="cliente.cpf " 
-        required name = 'cpf' #clientCpf= 'ngModel' [ngClass]="{'is-invalid': clientCpf.invalid}"  placeholder="Ex: 029.093.343-89">
+        <input type="cpf" class="form-control" [(ngModel)]="cliente.cpf " required name='cpf' #clientCpf='ngModel'
+          [ngClass]="{'is-invalid': clientCpf.invalid}" placeholder="Ex: 029.093.343-89">
       </div>
       <P></P>
     </div>
     <div class="form-group">
       <label for="date" class="col-sm-2 control-label">Data de Nascimento</label>
-      <div class="col-sm-10">
-        <input type="date" class="form-control"  [(ngModel)]="cliente.birth" 
-        required name = 'birth' #clientBirth= 'ngModel' [ngClass]="{'is-invalid': clientBirth.invalid}"placeholder="Ex: 24/02/2000">
+      <div class="col-sm-1F0">
+        <input type="date" class="form-control" [(ngModel)]="cliente.birth" required name='birth' #clientBirth='ngModel'
+          [ngClass]="{'is-invalid': clientBirth.invalid}" placeholder="Ex: 24/02/2000">
       </div>
       <P></P>
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1" class="col-sm-2 control-label">Email</label>
       <div class="col-sm-10">
-        <input type="email" class="form-control"  [(ngModel)]="cliente.email" 
-        required name = 'email' #clientEmail= 'ngModel' [ngClass]="{'is-invalid': clientEmail.invalid}" placeholder="Ex: malloc123@gmail.com">
+        <input type="email" class="form-control" [(ngModel)]="cliente.email" required name='email'
+          #clientEmail='ngModel' [ngClass]="{'is-invalid': clientEmail.invalid}" placeholder="Ex: malloc123@gmail.com">
       </div>
       <P></P>
     </div>
     <div class="form-group">
       <label for="inputCity" class="col-sm-2 control-label">Cidade em que reside</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" [(ngModel)]="cliente.city" 
-        required name = 'city' #clientCity= 'ngModel' [ngClass]="{'is-invalid': clientCity.invalid}" placeholder="Ex: Cuiabá">
+        <input type="text" class="form-control" [(ngModel)]="cliente.city" required name='city' #clientCity='ngModel'
+          [ngClass]="{'is-invalid': clientCity.invalid}" placeholder="Ex: Cuiabá">
       </div>
     </div>
     <P></P>
     <div class="form-group">
       <label for="inputCity" class="col-sm-2 control-label">Estado em que reside</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" [(ngModel)]="cliente.state" 
-        required name = 'state' #clientState= 'ngModel' [ngClass]="{'is-invalid': clientState.invalid}" placeholder="Ex: Mato-Grosso">
+        <input type="text" class="form-control" [(ngModel)]="cliente.state" required name='state' #clientState='ngModel'
+          [ngClass]="{'is-invalid': clientState.invalid}" placeholder="Ex: Mato-Grosso">
       </div>
     </div>
     <div class="col-md-6 offset-md-3">
-    <hr>
-    <div class="form-group">
+      <hr>
+      <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
           <div class="checkbox">
             <label>
-              <input type=checkbox required name = "check" [ngModel] > Confirmar Atualização
+              <input type=checkbox required name="check" [ngModel]> Confirmar Atualização
             </label>
           </div>
         </div>
       </div>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <button routerLink='/dev$/dbc' class ="btn btn-secondary "> Retornar </button> 
-        <button routerLink='/dev$/dbc' (click)="Att(cliente)" [disabled]="clientForm.invalid" type="button" class="btn btn-primary" style="margin: 10px;">Atualizar Dados</button>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button routerLink='/$/dev$/dbc/test' class="btn btn-secondary "> Retornar </button>
+          <button routerLink='/$/dev$/dbc' (click)="Att(cliente)" [disabled]="clientForm.invalid" type="button"
+            class="btn btn-primary" style="margin: 10px;">Atualizar Dados</button>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-    
 
-    
+
+
 </form>
-

@@ -14,23 +14,25 @@ import { DevCompononent } from './dev/dev.component';
 import { DbcComponent } from './dev/database/dbc.component';
 import { EditClientComponent } from './dev/client-edit/edit-client.component';
 import { EditingVehicleComponent } from './dev/veiculos-edit/editing-vehicle.component';
+import { ErrorComponent } from './error404/error.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'dev$', component: HomeDevComponent},
-  {path: 'dev$/edit', component:EditClientComponent},
-  {path: 'dev$/veiculos', component: VeiculosEditComponent},
-  {path: 'dev$/veiculos/edit/:code', component: EditingVehicleComponent},
-  {path: 'dev$/dbc', component: DevCompononent},
-  {path: 'dev$/dbc/test', component: DbcComponent},
-  {path: 'veiculos', component: VeiculosComponent },
-  {path: 'veiculos/comprar' ,component: ComprarComponent },
-  {path: 'veiculos/comprar/:code' ,component: ComprarComponent },
-  {path: 'veiculos/673', component: AudiComponents},
-  {path:'veiculos/6', component: TeslaComponents },
-  {path:'veiculos/67310', component: HondaComponents },
-  {path:'veiculos/67', component: ToytaComponents },
-  {path:'veiculos/6731', component: VolvoComponents }
+  {path: '$', component: HomeComponent},
+  {path: '$/dev$', component: HomeDevComponent},
+  {path: '$/dev$/edit', component:EditClientComponent},
+  {path: '$/dev$/veiculos', component: VeiculosEditComponent},
+  {path: '$/dev$/veiculos/edit/:code', component: EditingVehicleComponent},
+  {path: '$/dev$/dbc', component: DevCompononent},
+  {path: '$/dev$/dbc/test', component: DbcComponent},
+  {path: '$/veiculos', component: VeiculosComponent },
+  {path: '$/veiculos/comprar' ,component: ComprarComponent },
+  {path: '$/veiculos/comprar/:code' ,component: ComprarComponent },
+  {path: '$/veiculos/673', component: AudiComponents},
+  {path:'$/veiculos/6', component: TeslaComponents },
+  {path:'$/veiculos/67310', component: HondaComponents },
+  {path:'$/veiculos/67', component: ToytaComponents },
+  {path:'$/veiculos/6731', component: VolvoComponents },
+  {path: '**', component: ErrorComponent},
     
 ];
 

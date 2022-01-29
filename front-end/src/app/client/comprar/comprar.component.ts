@@ -33,11 +33,11 @@ export class ComprarComponent implements OnInit {
   }
 constructor(private router:Router, private service:ComprarService,private actvatedRoute:ActivatedRoute, private vehiclesService: VeiculosService){}
 
-// veiculos: Veiculos;
 
-// this.veiculos = this.vehiclesService.retrieveByCode(+this.actvatedRoute.snapshot.paramMap.get("code")!);
+veiculos: Veiculos;
 
-  ngOnInit(): void {}
+ngOnInit(): void {
+  this.veiculos = this.vehiclesService.retrieveByCode(+this.actvatedRoute.snapshot.paramMap.get("code")!);}
 
   confirm(){
     this.service.confirmPurchase(this.cliente)

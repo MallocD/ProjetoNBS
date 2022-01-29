@@ -15,10 +15,11 @@
     font-family: Didot, serif;
     color: azure;
   }
- a{
-     border-radius: 50px;
-     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
- }
+  a{
+    font-size: 25px;
+      border-radius: 50px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
   tr#t2{
       background-color: rgb(0, 153, 255);
   }

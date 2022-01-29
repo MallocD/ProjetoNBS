@@ -16,16 +16,25 @@
     color: azure;
   }
  a{
+   font-size: 25px;
      border-radius: 50px;
      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
  }
   tr#t2{
       background-color: rgb(0, 153, 255);
   }
-  th#t2{
-      font-size: 18px;
-      color: aliceblue;
+  th{
+      font-size: 26px;
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  h3{
+    text-align: center;
+    background-color: rgb(0, 15, 43);
+    border-radius: 10px;
+    color: aliceblue;
+  }
+  td{
+    font-size: 25px;
   }
   
  

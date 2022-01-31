@@ -69,7 +69,7 @@
     <div class="col-md-6 offset-md-3">
       
       <input style="width: 500px ;"  class="form-control" [(ngModel)]="cliente.vehicle" required name='vehicle'
-        #clientVehicle='ngModel' [ngClass]="{'is-invalid': clientVehicle.invalid}" type="text" list="vehicle">
+        #clientVehicle='ngModel' [ngClass]="{'is-invalid': clientVehicle.invalid}" type="vehicle" list="vehicle">
         <datalist id="vehicle">
           <option>{{veiculos.name}}</option>
         </datalist>

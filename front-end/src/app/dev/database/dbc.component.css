@@ -16,6 +16,7 @@
     color: azure;
   }
   a{
+    margin: 10px;
     font-size: 25px;
       border-radius: 50px;
       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif

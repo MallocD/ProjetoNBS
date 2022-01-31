@@ -1,16 +1,16 @@
 <body>
 <p><br><br><br></p>
 <p><br><br><br></p>
-<div class="form-group">
-  <div class="col-md-5 offset-md-6">
-    <img id = "i2" width="100" alt="Tec" src="/assets/images/dev.gif" />
+<form id= "area" #clientForm='ngForm' *ngIf="user" >
+  <div class="form-group">
+    <div class="col-md-5 offset-md-6">
+      <img id = "i2" width="100" alt="Tec" src="/assets/images/dev.gif" />
+    </div>
   </div>
-</div>
-<form #clientForm='ngForm' *ngIf="user" class="form-horizontal">
     <div class="form-group">
       <label for="exampleInputName2" class="col-md-6 offset-md-4">User</label>
       <div class="col-md-6 offset-md-4">
-        <input style="width: 400px ;" type="text" class="form-control" [(ngModel)]="user.name" required name='name'
+        <input style="width: 400px ;" type="user" class="form-control" [(ngModel)]="user.name" required name='name'
           #userName='ngModel' [ngClass]="{'is-invalid': userName.invalid}">
       </div>
   

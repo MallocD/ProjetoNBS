@@ -11,12 +11,12 @@
     <div class="form-group ">
       <label for="exampleInputLastName2" class="col-md-6 offset-md-4">Password</label>
       <div class="col-md-6 offset-md-4">
-        <input style="width: 400px ;" type="lastName" class="form-control" [(ngModel)]="user.password" required name='last'
+        <input style="width: 400px ;" type="password" class="form-control" [(ngModel)]="user.password" required name='last'
           #userPassword='ngModel' [ngClass]="{'is-invalid': userPassword.invalid}" >
       </div>
       <P></P>
     <div class="form-group">
       <div class="col-md-6 offset-md-4">
-        <button routerLink="/$/dev$" type="button" class="btn btn-primary btn-lg">Login</button>
+        <button (click)="login()" type="button" class="btn btn-primary btn-lg">Login</button>
       </div>
     </div>

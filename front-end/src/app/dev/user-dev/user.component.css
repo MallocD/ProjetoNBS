@@ -1,0 +1,28 @@
+
+h1{
+  background-color:rgb(0, 0, 0);
+  text-align: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.527);
+  border-radius:10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: azure;
+}
+img{
+  /* margin: px; */
+  border-radius:20px;
+}
+img#i2{
+  /* margin: px; */
+  border-radius:400px ;
+  position:relative;
+  right: 60px;
+}
+
+label{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  color: aliceblue;
+}
+body{
+background-color: black;
+}

@@ -67,17 +67,18 @@
   <div class="form-group row">
     <label class="col-md-6 offset-md-3">Nome do Veículo </label>
     <div class="col-md-6 offset-md-3">
-      <input style="width: 500px ;" class="form-control" [(ngModel)]="cliente.vehicle" required name='vehicle'
+      
+      <input style="width: 500px ;"  class="form-control" [(ngModel)]="cliente.vehicle" required name='vehicle'
         #clientVehicle='ngModel' [ngClass]="{'is-invalid': clientVehicle.invalid}" type="text" list="vehicle">
-      <datalist id="vehicle">
-        <option>Tesla Model S</option>
-        <option>Toyota Mirai</option>
-        <option>Audi A8</option>
-        <option> Volvo XC60 Polestar</option>
-        <option> Honda Clarity Fuel Cell</option>
-      </datalist>
+        <datalist id="vehicle">
+          <option>{{veiculos.name}}</option>
+        </datalist>
+        <select style="width: 300px;" id="disabledSelect" class="form-control">
+          <option>{{veiculos.name}}</option>
+        </select>
+      </div>
     </div>
-  </div>
+    
 
   <div class="form-group row">
     <label class="col-md-6 offset-md-3">Cor do Veículo</label>
@@ -92,7 +93,12 @@
       </datalist>
     </div>
   </div>
-
+  <P></P>
+  <div class="col-md-6 offset-md-3">
+    <label for="disabledTextInput">Preço do Veículo</label>
+      <input  [(ngModel)]="veiculos.price" required name='price' type="text" id="disabledTextInput" class="form-control" disabled>
+  </div>
+  
 
 
   <P></P>

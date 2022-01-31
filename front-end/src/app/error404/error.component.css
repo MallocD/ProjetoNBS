@@ -130,7 +130,7 @@
     box-sizing: border-box;
 }
 body {
-  background-color: #416475;
+  background-image: linear-gradient( rgb(116, 5, 101), rgb(243, 241, 122),rgb(12, 3, 11) );
   ;
 }
 html, button, input, select, textarea {
@@ -139,7 +139,7 @@ html, button, input, select, textarea {
 }
 h1 {
   text-align: center;
-  margin: 30px 15px;
+  /* margin: 30px 15px; */
   color: azure;
 }
 .zoom-area { 

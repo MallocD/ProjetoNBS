@@ -1,23 +1,22 @@
-h2{
-    background-color:rgb(36, 182, 0);
+h2 {
+    background-color: rgb(36, 182, 0);
     text-align: center;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.527);
-    border-radius:10px;
+    border-radius: 10px;
     font-family: Didot, serif;
     font-size: 40px;
-    color: azure;}
+    color: azure;
+}
 
-form{
-    font-family:OCR A Std, monospace ;
+form {
+    font-family: OCR A Std, monospace;
     font-size: 25px;
+}
 
-    }
-    footer{
-        font-style: italic;
-        font-size:15px;
-        background-color: rgb(13, 86, 243);
-        color: aliceblue;
-        text-align: center;
-      
-        
-      }
+footer {
+    font-style: italic;
+    font-size: 15px;
+    background-color: rgb(13, 86, 243);
+    color: aliceblue;
+    text-align: center;
+}

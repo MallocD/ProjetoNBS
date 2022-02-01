@@ -52,7 +52,7 @@
     <div class="col-md-6 offset-md-3">
       <input style="width: 900px ;" type="text" class="form-control" [(ngModel)]="cliente.city" required name='city'
         #clientCity='ngModel' [ngClass]="{'is-invalid': clientCity.invalid}" placeholder="Ex: Cuiabá">
-    </div>
+      </div>
   </div>
   <P></P>
   <div class="form-group">
@@ -69,13 +69,11 @@
     <div class="col-md-6 offset-md-3">
       
       <input style="width: 500px ;"  class="form-control" [(ngModel)]="cliente.vehicle" required name='vehicle'
-        #clientVehicle='ngModel' [ngClass]="{'is-invalid': clientVehicle.invalid}" type="vehicle" list="vehicle">
+        #clientVehicle='ngModel' [ngClass]="{'is-invalid': clientVehicle.invalid}" type="nameVehicle" list="vehicle">
         <datalist id="vehicle">
           <option>{{veiculos.name}}</option>
         </datalist>
-        <select style="width: 300px;" id="disabledSelect" class="form-control">
-          <option>{{veiculos.name}}</option>
-        </select>
+   
       </div>
     </div>
     

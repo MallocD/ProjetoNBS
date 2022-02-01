@@ -27,7 +27,8 @@ import {  VeiculosEditComponent } from "./veiculos-edit/veiculos-edit.component"
     imports:[
     CommonModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+  
 ],
 exports: [
     NavBarDevComponent

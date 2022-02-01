@@ -46,6 +46,9 @@ public class Cliente {
     @Column(nullable = false)
     private String payment;
 
+    @Column(nullable = false)
+    private String number;
+
 
 
 }

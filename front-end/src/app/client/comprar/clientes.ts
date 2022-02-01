@@ -6,6 +6,7 @@ export class Clientes{
     birth: string;
     cpf: string;
     email: string;
+    number: string;
     city: string;
     state: string
     color: string

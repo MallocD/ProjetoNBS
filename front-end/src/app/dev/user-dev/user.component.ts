@@ -22,10 +22,8 @@ export class UserComponent implements OnInit{
     user: User = new User();
 
     login(){
-        if(this.user.name=="Malloc$Dev/"){
-            if(this.user.password=="devnbs$6731"){
+        if(this.user.name=="Malloc$Dev/" && this.user.password=="devnbs$6731"){
                 this.router.navigate(['$/dev$'])
-            }
         }else{
             this.router.navigate(['/sdd'])
         

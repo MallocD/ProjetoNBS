@@ -21,6 +21,7 @@ export class ComprarComponent implements OnInit {
     birth: '',
     cpf: '',
     email: '',
+    number: '',
     city: '',
     state:'',
     color:'',

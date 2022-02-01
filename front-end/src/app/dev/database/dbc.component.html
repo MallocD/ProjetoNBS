@@ -1,51 +1,51 @@
-  
-<h1 >Customer database</h1>
+<h1>
+    Customer database</h1>
 <p></p>
-<a routerLink="/$/dev$/dbc" class="nav-link"  class="btn btn-warning" >Close list</a>
+<a routerLink="/$/dev$/dbc" class="nav-link" class="btn btn-warning">Close list</a>
 <p></p>
 
 <table class="table table-bordered">
-    <thead >
-        <tr id= "t2">
-            <th id= "t2">Id </th>
-            <th id= "t2" >FirstName</th>
-            <th id= "t2">LastName</th>
-            <th id= "t2">CPF</th>
-            <th id= "t2">E-mail</th>
-            <th id= "t2">BirthData</th>
-            <th id= "t2">City</th>
-            <th id= "t2">State</th>
-            <th id= "t2">Vehicle Purchased</th>
-            <th id= "t2">Vehicle color</th>
-            <th id= "t2">Form of payment</th>
-            <th id= "t2">Options</th>
+    <thead>
+        <tr id="t2">
+            <th id="t2">Id </th>
+            <th id="t2">FirstName</th>
+            <th id="t2">LastName</th>
+            <th id="t2">CPF</th>
+            <th id="t2">E-mail</th>
+            <th id="t2">Phone number</th>
+            <th id="t2">BirthData</th>
+            <th id="t2">City</th>
+            <th id="t2">State</th>
+            <th id="t2">Vehicle Purchased</th>
+            <th id="t2">Vehicle color</th>
+            <th id="t2">Form of payment</th>
+            <th id="t2">Options</th>
         </tr>
         <tr>
-        </thead>
-        <tbody>
-            <tr *ngFor = "let clients of clientes " class= "text-center">
-                <td>{{clients.id}}</td>
-                <td>{{clients.name}}</td>
-                <td>{{clients.last}}</td>
-                <td>{{clients.cpf}}</td>
-                <td>{{clients.email}}</td>
-                <td>{{clients.birth}}</td>
-                <td>{{clients.city}}</td>
-                <td>{{clients.state}}</td>
-                <td>{{clients.vehicle}}</td>
-                <td>{{clients.color}}</td>
-                <td>{{clients.payment}}</td>
-                <td>
-                    <a style= "margin: 15px;" (click)= "Editar(clients)" class="btn btn-warning -mr2">Edit</a>
-                    <a  (click)="Delete(clients)" class="btn btn-danger" >Delete</a>
-                </td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let clients of clientes " class="text-center">
+            <td>{{clients.id}}</td>
+            <td>{{clients.name}}</td>
+            <td>{{clients.last}}</td>
+            <td>{{clients.cpf}}</td>
+            <td>{{clients.email}}</td>
+            <td>{{clients.number}}</td>
+            <td>{{clients.birth}}</td>
+            <td>{{clients.city}}</td>
+            <td>{{clients.state}}</td>
+            <td>{{clients.vehicle}}</td>
+            <td>{{clients.color}}</td>
+            <td>{{clients.payment}}</td>
+            <td>
+                <a style="margin: 15px;" (click)="Editar(clients)" class="btn btn-warning -mr2">Edit</a>
+                <a (click)="Delete(clients)" class="btn btn-danger">Delete</a>
+            </td>
 
-            </tr>
+        </tr>
 
-        </tbody>  
-  </table>
+    </tbody>
+</table>
 
-  <p><br><br><br></p>
-  <p><br><br><br></p>
-
-   
+<p><br><br><br></p>
+<p><br><br><br></p>

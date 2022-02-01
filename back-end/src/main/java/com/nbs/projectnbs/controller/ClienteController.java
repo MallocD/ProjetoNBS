@@ -2,6 +2,7 @@ package com.nbs.projectnbs.controller;
 
 import com.nbs.projectnbs.cliente.Cliente;
 import com.nbs.projectnbs.cliente.ClienteService;
+import com.nbs.projectnbs.service.ClienteServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +13,7 @@ import java.util.List;
 public class ClienteController {
 
     @Autowired
-    ClienteService service;
+    ClienteServiceImp service;
 
     @GetMapping
     public List<Cliente> listar(){

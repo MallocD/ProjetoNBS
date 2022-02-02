@@ -11,6 +11,7 @@ import { NavBarDevComponent } from "./nav-bar/nav-bar.component";
 import { UserComponent } from "./user-dev/user.component";
 import { EditingVehicleComponent } from "./veiculos-edit/editing-vehicle.component";
 import {  VeiculosEditComponent } from "./veiculos-edit/veiculos-edit.component";
+import { NgxMaskModule} from 'ngx-mask'
 
 
 @NgModule({
@@ -22,12 +23,15 @@ import {  VeiculosEditComponent } from "./veiculos-edit/veiculos-edit.component"
         DbcComponent,
         EditClientComponent,
         EditingVehicleComponent,
-        UserComponent
+        UserComponent,
+        
     ],
     imports:[
     CommonModule,
     FormsModule,
     AppRoutingModule,
+    NgxMaskModule.forChild()
+    
   
 ],
 exports: [

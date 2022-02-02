@@ -1,5 +1,4 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Veiculos } from './veiculos';
 import { VeiculosService } from './veiculos.service';
 

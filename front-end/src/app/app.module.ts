@@ -10,6 +10,7 @@ import { DevModule } from './dev/dev.module';
 import { VeiculosComponent } from './client/veiculos/veiculos.component';
 import { ComprarService } from './dev/dev.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxMaskModule} from 'ngx-mask'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,11 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ClientModule,
     DevModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxMaskModule.forRoot({
+      dropSpecialCharacters: false
+    })
+    
   ],
   providers: [ComprarService],
   bootstrap: [AppComponent]

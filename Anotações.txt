@@ -24,5 +24,37 @@ Próximo passo :
 
 Vai dar tudo certo! Confio em mim mesmo!!
 
-Criar um component usuario
-criar metodo fazer login, que tenha a condição de quem a senha e usuário sejam igual ao salvo, se verdadeiro aperte o botão que irá redirecionar para a página dev
+//Criar um component usuario
+//criar metodo fazer login, que tenha a condição de quem a senha e usuário sejam igual ao salvo, se verdadeiro aperte o botão que irá redirecionar para a página dev
+
+
+
+<--Anotações Apresentação->
+
+ngForOf/*ngFor=>
+Uma diretiva estrutural que renderiza um modelo para cada item em uma coleção. 
+A diretiva é colocada em um elemento, que se torna o pai dos modelos clonados.
+
+A diretiva ngForOf é geralmente usada na forma abreviada *ngFor. Nesse formulário,
+o modelo a ser renderizado para cada iteração é o conteúdo de um elemento âncora que contém a diretiva.
+
+routerLink vs href==>
+
+Href é o atributo básico fornecido pelo Html para navegar pelas páginas que recarrega a página ao clicar.
+
+routerLink é o atributo fornecido pelo angular para navegar para diferentes componentes sem recarregar a página.
+
+A principal diferença entre ambos é que href mata o estado da página atual onde o routerLink não perde o estado da página.
+
+Two-way binding==>
+A associação bidirecional oferece aos componentes em seu aplicativo uma maneira de compartilhar dados. 
+Use a associação bidirecional para ouvir eventos e atualizar valores simultaneamente entre componentes pai e filho.
+
+Binding syntax==>
+A vinculação de dados mantém sua página atualizada automaticamente com base no estado do seu aplicativo. Você usa vinculação de dados para especificar coisas como a origem de uma imagem,
+o estado de um botão ou dados de um usuário específico.
+
+ngForm==>
+Cria uma instância FormGroup de nível superior e a associa a um formulário para rastrear o valor agregado do formulário e o status de validação.
+
+

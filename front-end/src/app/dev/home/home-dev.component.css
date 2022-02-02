@@ -1,41 +1,45 @@
-body{
+body {
     background-color: rgba(252, 252, 252, 0.836);
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  section{
-    padding :50px;
+}
+
+section {
+    padding: 50px;
     background-color: white;
-    margin : auto;
+    margin: auto;
     width: 600px;
     height: 200px;
-    border-radius:10px;
+    border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.527);
-  }
-  
-  footer{
+}
+
+footer {
     font-style: italic;
-    font-size:15px;
+    font-size: 15px;
     background-color: rgb(0, 0, 0);
     color: aliceblue;
-  
-    
-  }
-  p{
-    text-align:justify;
-  }
-  a#a1{
+}
+
+p {
+    text-align: justify;
+    margin: 10px;
+}
+
+a#a1 {
     font-size: 30px;
     font-family: DejaVu Sans Mono, monospace;
-  }
-  h1{
-    background-color:rgb(3, 5, 10);
+}
+
+h1 {
+    background-color: rgb(3, 5, 10);
     text-align: center;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.527);
     border-radius: 5px 10px;
     font-family: Didot, serif;
     color: azure;
-  }
-  img{
+}
+
+img {
     border-radius: 30px;
-  }
+}

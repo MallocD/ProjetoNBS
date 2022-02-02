@@ -20,3 +20,11 @@ footer {
     color: aliceblue;
     text-align: center;
 }
+
+input#i2 {
+    width: 500px;
+}
+
+input#i1 {
+    width: 900px;
+}

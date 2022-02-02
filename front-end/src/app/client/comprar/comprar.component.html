@@ -9,7 +9,7 @@
     <div class="form-group">
         <label for="exampleInputName2" class="col-md-6 offset-md-3">Primeiro Nome</label>
         <div class="col-md-6 offset-md-3">
-            <input style="width: 900px ;" [dropSpecialCharacters]="true" mask="" type="text" class="form-control" [(ngModel)]="cliente.name" required name='name' #clientName='ngModel' [ngClass]="{'is-invalid': clientName.invalid}" placeholder="Ex: Marcio">
+            <input style="width: 900px ;" type="text" class="form-control" [(ngModel)]="cliente.name" required name='name' #clientName='ngModel' [ngClass]="{'is-invalid': clientName.invalid}" placeholder="Ex: Marcio">
         </div>
     </div>
     <P></P>

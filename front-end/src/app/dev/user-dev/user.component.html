@@ -1,67 +1,27 @@
 <body>
-  <p><br><br><br><br></p>
-  <p><br><br><br><br></p>
-  <p><br><br><br><br></p>
+    <p><br><br><br><br></p>
+    <p><br><br><br><br><br></p>
 
 
-  <div class="container">
-    <div class="card card-container">
-      <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
-      <img id="profile-img" class="profile-img-card" src="/assets/images/dev.gif" />
-      <p id="profile-name" class="profile-name-card"></p>
-      <form class="form-signin">
-        <input id="nome" type="user" class="form-control" [(ngModel)]="user.name" required name='name'
-          #userName='ngModel' [ngClass]="{'is-invalid': userName.invalid}">
-        <p></p>
-        <input id="senha" type="password" class="form-control" [(ngModel)]="user.password" required name='last'
-          #userPassword='ngModel' [ngClass]="{'is-invalid': userPassword.invalid}">
+    <div class="container">
+        <div class="card card-container">
+            <img id="profile-img" class="profile-img-card" src="/assets/images/dev.gif" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin">
+                <input id="nome" type="user" class="form-control" [(ngModel)]="user.name" required name='name' #userName='ngModel' [ngClass]="{'is-invalid': userName.invalid}">
+                <p></p>
+                <input id="senha" type="password" class="form-control" [(ngModel)]="user.password" required name='last' #userPassword='ngModel' [ngClass]="{'is-invalid': userPassword.invalid}">
 
-        <p><br></p>
-      </form><!-- /form -->
-      <img (click)="login()" width="400" alt="Tec" src="/assets/images/tec2.jpg" />
+                <p><br></p>
+            </form>
+            <img (click)="login()" width="400" alt="Tec" src="/assets/images/tec2.jpg" />
 
-    </div><!-- /card-container -->
-  </div><!-- /container -->
-  <p><br><br><br><br></p>
-  <p><br><br><br><br></p>
-  <p><br><br><br><br></p>
-  <p><br><br><br><br></p>
-  <p><br><br><br><br></p>
+        </div>
+    </div>
+    <p><br><br><br><br></p>
+    <p><br><br><br><br></p>
+    <p><br><br><br><br></p>
+    <p><br><br><br><br></p>
+    <p><br><br><br><br></p>
 
 </body>
-
-
-<!-- <body>
-<p><br><br><br></p>
-<p><br><br><br></p>
-<form id= "area" #clientForm='ngForm' *ngIf="user" class="form-horizontal">
-  <div class="form-group">
-    <div class="col-md-5 offset-md-6">
-      <img id = "i2" width="100" alt="Tec" src="/assets/images/dev.gif" />
-    </div>
-  </div>
-    <div class="form-group">
-      <label for="exampleInputName2" class="col-md-6 offset-md-4">User</label>
-      <div class="col-md-6 offset-md-4">
-        <input style="width: 400px ;" type="user" class="form-control" [(ngModel)]="user.name" required name='name'
-          #userName='ngModel' [ngClass]="{'is-invalid': userName.invalid}">
-      </div>
-  
-      <P></P>
-    </div>
-    <div class="form-group ">
-      <label for="exampleInputLastName2" class="col-md-6 offset-md-4">Password</label>
-      <div class="col-md-6 offset-md-4">
-        <input style="width: 400px ;" type="password" class="form-control" [(ngModel)]="user.password" required name='last'
-          #userPassword='ngModel' [ngClass]="{'is-invalid': userPassword.invalid}" >
-      </div>
-      <P></P>
-      <p><br></p>
-    <div class="form-group">
-      <div class="col-md-6 offset-md-4">
-        <img (click)="login()"  width="400" alt="Tec" src="/assets/images/tec2.jpg" />
-      </div>
-    </div>
-    <p><br><br><br></p>
-    <p><br><br><br></p>
-  <body> -->

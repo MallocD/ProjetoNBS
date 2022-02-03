@@ -10,7 +10,7 @@ export class ComprarService{
 
     constructor(private http: HttpClient){
     }
-    Url= 'test/clientes'
+    Url= 'clientes'
 
     
 

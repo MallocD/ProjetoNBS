@@ -25,7 +25,7 @@ const routes: Routes = [
   {path: '$/dev$/veiculos', component: VeiculosEditComponent},
   {path: '$/dev$/veiculos/edit/:code', component: EditingVehicleComponent},
   {path: '$/dev$/dbc', component: DevCompononent},
-  {path: '$/dev$/dbc/test', component: DbcComponent},
+  {path: '$/dev$/dbc/clientes', component: DbcComponent},
   {path: '$/veiculos', component: VeiculosComponent },
   {path: '$/veiculos/comprar' ,component: ComprarComponent },
   {path: '$/veiculos/comprar/:code' ,component: ComprarComponent },

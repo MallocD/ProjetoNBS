@@ -29,6 +29,7 @@ CREATE TABLE `clientes` (
   `birth` varchar(45) NOT NULL,
   `CPF` varchar(45) NOT NULL,
   `email` varchar(45) NOT NULL,
+  `number` varchar(45) NOT NULL,
   `city` varchar(45) NOT NULL,
   `state` varchar(45) NOT NULL,
   `vehicle` varchar(45) NOT NULL,
